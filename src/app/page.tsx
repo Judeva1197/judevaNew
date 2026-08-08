@@ -4,9 +4,11 @@ import { Navbar } from "@/components/layout/Navbar";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { WhyChooseSection } from "@/components/sections/WhyChooseSection";
+import { FounderNoteSection } from "@/components/sections/FounderNoteSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { ProcessSection } from "@/components/sections/ProcessSection";
+import { BuildingHealthCheckSection } from "@/components/sections/BuildingHealthCheckSection";
 import { ConstructionDnaSection } from "@/components/sections/ConstructionDnaSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -20,7 +22,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1">
-        {/* Padded Carousel Hero Section */}
+        {/* Builder-Led Hero Section */}
         <HeroSection />
 
         {/* 01 / Our point of view (About Section) */}
@@ -29,14 +31,20 @@ export default function Home() {
         {/* 02 / Why Choose Judeva Section */}
         <WhyChooseSection />
 
+        {/* Founder Section: A Note From Eddy */}
+        <FounderNoteSection />
+
         {/* 03 / What We Do (Services Section) */}
         <ServicesSection />
 
-        {/* 04 / How We Work (Process Section) */}
-        <ProcessSection />
+        {/* Unique Feature Callout: Building Health Check */}
+        <BuildingHealthCheckSection />
 
-        {/* 05 / Built on Construction DNA Section */}
+        {/* 04 / Built on Construction DNA Section */}
         <ConstructionDnaSection />
+
+        {/* 05 / How We Work (Process Section: Less firefighting. More foresight. - Placed next to Construction DNA) */}
+        <ProcessSection />
 
         {/* Client Testimonials Section */}
         <TestimonialsSection />

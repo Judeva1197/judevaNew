@@ -40,7 +40,7 @@ export function ServiceDetailLayout({
       <Navbar />
 
       <main className="flex-1">
-        {/* Hero Section with Padded Background Image */}
+        {/* Hero Section with Padded Background Image (No Dark Overlay) */}
         <section className="w-full py-4 sm:py-6">
           <div className="w-full px-6 md:px-[50px]">
             <div className="relative min-h-[460px] sm:min-h-[500px] w-full overflow-hidden rounded-[15px] md:rounded-[24px] bg-neutral-900 flex items-center justify-center">
@@ -54,9 +54,6 @@ export function ServiceDetailLayout({
                 sizes="100vw"
               />
 
-              {/* Gradient Dark Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
-
               <div className="relative z-10 p-6 sm:p-10 md:p-16 max-w-4xl text-center">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -65,17 +62,17 @@ export function ServiceDetailLayout({
                 >
                   <Link
                     href="/services"
-                    className="inline-flex items-center gap-2 font-sans text-xs font-semibold text-neutral-200 hover:text-highlight transition-colors mb-4 bg-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm"
+                    className="inline-flex items-center gap-2 font-sans text-xs font-semibold text-white hover:text-highlight transition-colors mb-4 bg-slate-900/80 px-4 py-1.5 rounded-full backdrop-blur-md"
                   >
                     <ArrowLeft size={14} />
                     <span>Back to Services</span>
                   </Link>
 
-                  <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.08]">
+                  <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.08] bg-slate-900/60 p-4 rounded-2xl backdrop-blur-md inline-block">
                     {title}
                   </h1>
 
-                  <p className="mt-6 font-sans text-base sm:text-lg md:text-xl text-neutral-100 leading-relaxed font-normal max-w-3xl mx-auto">
+                  <p className="mt-6 font-sans text-base sm:text-lg md:text-xl text-white leading-relaxed font-medium max-w-3xl mx-auto bg-slate-900/60 p-4 rounded-2xl backdrop-blur-md">
                     {subtitle}
                   </p>
 

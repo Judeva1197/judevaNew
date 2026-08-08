@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, useInView } from "framer-motion";
 import { UserCheck, ShieldCheck, Wrench, Award } from "lucide-react";
 
 const features = [
@@ -28,26 +28,64 @@ const features = [
 
 const stats = [
   {
-    number: "15+",
+    targetNumber: 15,
+    suffix: "+",
     title: "Years Experience",
     description: "Deep understanding of Sydney's property landscape.",
   },
   {
-    number: "40+",
+    targetNumber: 40,
+    suffix: "+",
     title: "Sites Managed",
     description: "Trusted by committees across the metropolitan area.",
   },
   {
-    number: "2hr",
+    targetNumber: 2,
+    suffix: "hr",
     title: "Emergency Response",
     description: "Rapid deployment for critical building faults.",
   },
   {
-    number: "100%",
+    targetNumber: 100,
+    suffix: "%",
     title: "Transparent",
     description: "Clear reporting and open communication always.",
   },
 ];
+
+function AnimatedCounter({ targetNumber, suffix = "" }: { targetNumber: number; suffix: string }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-30px" });
+
+  useEffect(() => {
+    if (!isInView) return;
+    let start = 0;
+    const duration = 2000; // 2 seconds count animation
+    const frameRate = 1000 / 60;
+    const totalFrames = Math.round(duration / frameRate);
+    const increment = targetNumber / totalFrames;
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= targetNumber) {
+        setCount(targetNumber);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, frameRate);
+
+    return () => clearInterval(timer);
+  }, [isInView, targetNumber]);
+
+  return (
+    <span ref={ref}>
+      {count}
+      {suffix}
+    </span>
+  );
+}
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -135,7 +173,6 @@ export function WhyChooseSection() {
                   const IconComp = feature.icon;
                   return (
                     <div key={idx} className="flex items-start gap-4">
-                      {/* Light orange background for icons */}
                       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#FFF0E6] text-highlight">
                         <IconComp className="h-5 w-5" />
                       </div>
@@ -155,7 +192,7 @@ export function WhyChooseSection() {
 
           </div>
 
-          {/* Bottom Statistics 4-Column Grid: Hover turn BG Orange & letters White */}
+          {/* Bottom Statistics 4-Column Grid with Animated Counters */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -169,9 +206,9 @@ export function WhyChooseSection() {
                 variants={itemVariants}
                 className="group bg-white rounded-[15px] md:rounded-[20px] p-6 md:p-8 hover:bg-highlight transition-all duration-300 cursor-pointer"
               >
-                {/* Stat number: turns WHITE on hover */}
+                {/* Stat number: Animated counter that turns WHITE on hover */}
                 <div className="font-display text-4xl sm:text-5xl font-extrabold text-highlight group-hover:text-white transition-colors duration-300 tracking-tight">
-                  {stat.number}
+                  <AnimatedCounter targetNumber={stat.targetNumber} suffix={stat.suffix} />
                 </div>
                 
                 {/* Stat title: turns WHITE on hover */}

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function ConstructionDnaSection() {
   return (
-    <section className="w-full bg-white py-20 md:py-28 text-neutral-900">
+    <section className="w-full bg-white py-20 md:py-28 text-neutral-900 ">
       {/* 50px viewport side padding */}
       <div className="w-full px-6 md:px-[50px]">
         <div className="mx-auto max-w-7xl grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 items-center">
@@ -49,7 +49,7 @@ export function ConstructionDnaSection() {
             className="flex flex-col pt-4 lg:pt-0"
           >
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-highlight">
-              05 / Built on construction DNA
+              04 / Built on construction DNA
             </p>
 
             <h2 className="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary tracking-tight leading-[1.08]">

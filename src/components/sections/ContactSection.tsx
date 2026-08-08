@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, ArrowUpRight, Check } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUpRight, Check, Award, FileCheck2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export function ContactSection() {
@@ -40,7 +40,7 @@ export function ContactSection() {
                 </h2>
 
                 <p className="mt-6 max-w-md font-sans text-base sm:text-lg leading-relaxed text-neutral-700 font-normal">
-                  Tell us a little about your property and we’ll arrange a free site assessment.
+                  Tell us a little about your property and we’ll arrange a free site assessment or a tailored management proposal.
                 </p>
 
                 {/* Direct Contact Links */}
@@ -69,7 +69,19 @@ export function ContactSection() {
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FFF0E6] text-highlight shrink-0">
                       <MapPin size={18} />
                     </div>
-                    <span>90 Eddy Street, Merrylands West</span>
+                    <span>90 Eddy Street, Merrylands West, Sydney NSW</span>
+                  </div>
+                </div>
+
+                {/* Builder Qualifications Reminder */}
+                <div className="mt-10 pt-8 border-t border-neutral-300/80 flex flex-col gap-2 font-sans text-xs font-semibold text-neutral-600">
+                  <div className="flex items-center gap-2">
+                    <Award size={16} className="text-highlight" />
+                    <span>NSW Licensed Builder & Trades Background</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FileCheck2 size={16} className="text-highlight" />
+                    <span>Cert IV & Diploma in Building & Construction</span>
                   </div>
                 </div>
               </motion.div>
@@ -83,7 +95,7 @@ export function ContactSection() {
               >
                 <div className="rounded-[24px] bg-primary p-6 sm:p-8 font-sans text-white">
                   <h3 className="font-display text-2xl font-bold text-white">
-                    Request a proposal
+                    Request a Proposal
                   </h3>
 
                   {formSent ? (
@@ -95,7 +107,7 @@ export function ContactSection() {
                         Proposal Request Received
                       </h4>
                       <p className="text-neutral-200">
-                        Thanks for reaching out. We&apos;ll be in touch within two business hours.
+                        Thanks for reaching out. We&apos;ll be in touch within two business hours to discuss your building.
                       </p>
                     </div>
                   ) : (
@@ -121,7 +133,7 @@ export function ContactSection() {
                       <div>
                         <input
                           type="text"
-                          placeholder="Property suburb"
+                          placeholder="Property suburb or address"
                           className="w-full rounded-xl bg-white/10 px-4 py-3.5 text-sm text-white placeholder:text-neutral-300 border border-white/20 focus:border-highlight focus:bg-white/15 focus:outline-none transition-colors"
                         />
                       </div>
@@ -132,18 +144,18 @@ export function ContactSection() {
                           className="w-full rounded-xl bg-white/10 px-4 py-3.5 text-sm text-neutral-200 border border-white/20 focus:border-highlight focus:bg-white/15 focus:outline-none transition-colors cursor-pointer"
                         >
                           <option value="" disabled className="text-neutral-900 bg-white">
-                            What can we help with?
+                            Select Enquiry Type
                           </option>
-                          <option className="text-neutral-900 bg-white">Building management</option>
-                          <option className="text-neutral-900 bg-white">Facilities management</option>
-                          <option className="text-neutral-900 bg-white">Maintenance services</option>
-                          <option className="text-neutral-900 bg-white">Onsite management</option>
+                          <option className="text-neutral-900 bg-white">Building Health Check Request</option>
+                          <option className="text-neutral-900 bg-white">Full-Time Building & Facilities Management</option>
+                          <option className="text-neutral-900 bg-white">Part-Time Site Management</option>
+                          <option className="text-neutral-900 bg-white">General Enquiry</option>
                         </select>
                       </div>
 
                       <div>
                         <textarea
-                          placeholder="Tell us a little more (optional)"
+                          placeholder="Tell us a little more about your property (optional)"
                           rows={3}
                           className="w-full rounded-xl bg-white/10 px-4 py-3.5 text-sm text-white placeholder:text-neutral-300 border border-white/20 focus:border-highlight focus:bg-white/15 focus:outline-none transition-colors resize-none"
                         />
@@ -154,12 +166,12 @@ export function ContactSection() {
                         variant="highlight"
                         className="w-full justify-center rounded-xl gap-2 py-3.5 text-sm font-bold shadow-none hover:bg-highlight-dark transition-all"
                       >
-                        <span>Send enquiry</span>
+                        <span>Send Enquiry</span>
                         <ArrowUpRight size={16} />
                       </Button>
 
                       <p className="text-center text-xs text-neutral-300 font-sans">
-                        No obligation. Free initial consultation.
+                        No obligation. Free initial consultation & builder assessment.
                       </p>
                     </form>
                   )}
