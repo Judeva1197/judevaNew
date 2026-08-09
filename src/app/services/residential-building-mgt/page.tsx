@@ -43,7 +43,7 @@ export default function ResidentialBuildingMgtPage() {
           heading: "Creating Outstanding Living Environments",
           paragraphs: [
             "The value of a residential apartment is heavily dictated by the condition of its common areas. A pristine lobby, a sparkling pool, and perfectly manicured gardens create an environment that commands premium rental yields and high resale values.",
-            "We implement rigorous oversight of all soft services—cleaning, landscaping, pressure washing, pool servicing, and protective lift curtains during move-ins.",
+            "We implement thorough oversight of all soft services—cleaning, landscaping, pressure washing, pool servicing, and protective lift curtains during move-ins.",
           ],
         },
         {

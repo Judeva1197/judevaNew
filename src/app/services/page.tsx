@@ -99,7 +99,7 @@ const allCapabilities = [
   {
     id: "06",
     title: "Commercial Building Mgt",
-    description: "Rigorous oversight of commercial assets focusing on tenant retention and yield.",
+    description: "Thorough oversight of commercial assets focusing on tenant retention and yield.",
     benefit: "Maximise commercial returns",
     href: "/services/commercial-building-mgt",
   },

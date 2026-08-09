@@ -35,7 +35,7 @@ export default function BuildingMaintenancePage() {
         {
           heading: "What Building Maintenance Covers",
           paragraphs: [
-            "Building maintenance goes beyond simple aesthetics; it is the rigorous, disciplined servicing of the structural and mechanical elements that keep a property functioning. While building management focuses on high-level operational oversight and resident liaison, building maintenance is strictly focused on physical tasks.",
+            "Building maintenance goes beyond simple aesthetics; it is the thorough, disciplined servicing of the structural and mechanical elements that keep a property functioning. While building management focuses on high-level operational oversight and resident liaison, building maintenance is strictly focused on physical tasks.",
             "At Judeva, we deliver intelligent building maintenance across Sydney. Driven by our deep, builder-led expertise, we don't just coordinate contractors; we manage the lifecycle of your property's critical infrastructure. We ensure that every piece of plant equipment and every structural element is maintained precisely to specification.",
           ],
         },

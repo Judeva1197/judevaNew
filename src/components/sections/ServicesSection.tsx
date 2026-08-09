@@ -44,7 +44,7 @@ const servicesList: ServiceCard[] = [
   {
     id: "05",
     title: "Commercial Building Management",
-    description: "Rigorous oversight of commercial assets focusing on tenant retention and system reliability.",
+    description: "Thorough oversight of commercial assets focusing on tenant retention and system reliability.",
     benefit: "Maximise commercial returns",
     href: "/services/commercial-building-management",
   },

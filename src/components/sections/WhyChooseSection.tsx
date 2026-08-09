@@ -16,7 +16,7 @@ const features = [
     icon: ShieldCheck,
     title: "Proactive, Not Reactive",
     description:
-      "We implement rigorous preventative maintenance schedules to catch minor wear and tear before it becomes a major capital expense.",
+      "We implement thorough preventative maintenance schedules to catch minor wear and tear before it becomes a major capital expense.",
   },
   {
     icon: Wrench,

@@ -50,7 +50,7 @@ export default function BuildingManagementPage() {
           heading: "Compliance and Safety Management",
           paragraphs: [
             "Compliance is non-negotiable. In New South Wales, the regulatory landscape for both strata and commercial properties is complex and carries heavy penalties for non-compliance. From the Annual Fire Safety Statement (AFSS) and lift certifications to facade inspections and anchor point testing, the administrative burden on committees is massive.",
-            "Judeva handles this entirely. We maintain rigorous compliance registers, coordinate certified practitioners for mandatory testing, manage the rectification of any defects identified during inspections, and ensure all necessary documentation is submitted to local councils and fire authorities on time. We also conduct comprehensive risk assessments and implement strict contractor management protocols, ensuring that anyone working on your site holds the correct licenses and insurances.",
+            "Judeva handles this entirely. We maintain strict compliance registers, coordinate certified practitioners for mandatory testing, manage the rectification of any defects identified during inspections, and ensure all necessary documentation is submitted to local councils and fire authorities on time. We also conduct comprehensive risk assessments and implement strict contractor management protocols, ensuring that anyone working on your site holds the correct licenses and insurances.",
           ],
         },
         {

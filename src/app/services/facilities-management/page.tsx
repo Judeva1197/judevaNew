@@ -13,7 +13,7 @@ export default function FacilitiesManagementPage() {
         {
           title: "Preventative Maintenance",
           description:
-            "Rigorous scheduled servicing to extend equipment lifespan and prevent catastrophic failures before they occur.",
+            "Thorough scheduled servicing to extend equipment lifespan and prevent catastrophic failures before they occur.",
         },
         {
           title: "Strict Compliance",

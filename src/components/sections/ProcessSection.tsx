@@ -74,7 +74,7 @@ export function ProcessSection() {
             </h2>
 
             <p className="mt-6 max-w-[340px] font-sans text-sm sm:text-base leading-relaxed text-neutral-600 font-normal">
-              A rigorous, human process that gives your property a clear plan and the confidence to move forward.
+              A thorough, human process that gives your property a clear plan and the confidence to move forward.
             </p>
 
             <div className="mt-8">
