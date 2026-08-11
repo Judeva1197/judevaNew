@@ -28,7 +28,7 @@ const features = [
 
 const stats = [
   {
-    targetNumber: 15,
+    targetNumber: 20,
     suffix: "+",
     title: "Years Experience",
     description: "Deep understanding of Sydney's property landscape.",
@@ -142,7 +142,7 @@ export function WhyChooseSection() {
                 </div>
                 <div>
                   <h4 className="font-display text-sm font-bold text-primary">Builder-Led Excellence</h4>
-                  <p className="font-sans text-xs text-neutral-600 mt-0.5">Sydney&apos;s Trusted Property Managers</p>
+                  <p className="font-sans text-xs text-neutral-600 mt-0.5">Sydney&apos;s Trusted Building Managers</p>
                 </div>
               </div>
             </motion.div>

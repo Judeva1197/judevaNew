@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { PhoneCall, Send, ChevronLeft, ChevronRight, Award, ShieldCheck, FileCheck2, Sparkles } from "lucide-react";
+import { PhoneCall, Send, ChevronLeft, ChevronRight, Award, ShieldCheck, FileCheck2, Sparkles, Laptop } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 interface SlideData {
@@ -72,7 +72,7 @@ export function HeroSection() {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          {/* Background Image Carousel (No Overlay) */}
+          {/* Background Image Carousel */}
           <AnimatePresence mode="wait">
             <motion.div
               key={slides[currentSlide].id}
@@ -107,7 +107,7 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.4 }}
-                  className="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md"
+                  className="inline-flex items-center gap-2 rounded-full bg-slate-900/80 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md border border-white/10"
                 >
                   <Sparkles className="h-3.5 w-3.5 text-highlight" />
                   <span>{slides[currentSlide].badge}</span>
@@ -115,7 +115,7 @@ export function HeroSection() {
               </AnimatePresence>
 
               {/* TOP RIGHT Controls: Dots & Navigation Arrows */}
-              <div className="flex items-center gap-4 bg-slate-900/80 px-4 py-2 rounded-full backdrop-blur-md">
+              <div className="flex items-center gap-4 bg-slate-900/80 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                 {/* Dots Indicators */}
                 <div className="flex items-center gap-2">
                   {slides.map((slide, idx) => (
@@ -175,18 +175,22 @@ export function HeroSection() {
                   </p>
 
                   {/* Trust Signals & Qualifications Bar */}
-                  <div className="mt-6 flex flex-wrap items-center gap-3 font-sans text-xs font-semibold text-neutral-200">
+                  <div className="mt-6 flex flex-wrap items-center gap-2.5 font-sans text-xs font-semibold text-neutral-200">
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-black/40 px-3.5 py-1.5 backdrop-blur-md border border-white/15">
                       <Award className="h-3.5 w-3.5 text-highlight" />
                       <span>NSW Builder&apos;s Licence</span>
                     </span>
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-black/40 px-3.5 py-1.5 backdrop-blur-md border border-white/15">
-                      <ShieldCheck className="h-3.5 w-3.5 text-highlight" />
-                      <span>Cert IV in Building & Construction</span>
+                      <FileCheck2 className="h-3.5 w-3.5 text-highlight" />
+                      <span>Cert IV & Diploma in Building</span>
                     </span>
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-black/40 px-3.5 py-1.5 backdrop-blur-md border border-white/15">
-                      <FileCheck2 className="h-3.5 w-3.5 text-highlight" />
-                      <span>Diploma in Building & Construction</span>
+                      <ShieldCheck className="h-3.5 w-3.5 text-highlight" />
+                      <span>Cert II in Security</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-black/40 px-3.5 py-1.5 backdrop-blur-md border border-white/15">
+                      <Laptop className="h-3.5 w-3.5 text-highlight" />
+                      <span>Cert II & III in Information Technology</span>
                     </span>
                   </div>
 

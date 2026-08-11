@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Award, FileCheck2, UserCheck } from "lucide-react";
+import { Award, FileCheck2, UserCheck, ShieldCheck, Laptop } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { FounderNoteSection } from "@/components/sections/FounderNoteSection";
@@ -26,7 +26,7 @@ export default function AboutPage() {
         {/* Qualification & Credentials Bar Section */}
         <section className="w-full bg-[#FFF8F3] py-12 text-neutral-900 border-y border-neutral-200/60">
           <div className="w-full px-6 md:px-[50px]">
-            <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="mx-auto max-w-7xl flex flex-col lg:flex-row lg:items-center justify-between gap-6">
               <div>
                 <span className="font-sans text-xs font-semibold uppercase tracking-widest text-highlight">
                   Verified Credentials & Licences
@@ -37,18 +37,22 @@ export default function AboutPage() {
               </div>
 
               {/* Qualification Badges Bar */}
-              <div className="flex flex-wrap gap-4 font-sans text-sm font-bold text-primary">
-                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-5 py-3.5 border border-neutral-200/80">
-                  <Award size={20} className="text-highlight shrink-0" />
+              <div className="flex flex-wrap gap-3 sm:gap-4 font-sans text-xs sm:text-sm font-bold text-primary">
+                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-4 sm:px-5 py-3 border border-neutral-200/80 shadow-sm">
+                  <Award size={18} className="text-highlight shrink-0" />
                   <span>NSW Builder&apos;s Licence</span>
                 </div>
-                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-5 py-3.5 border border-neutral-200/80">
-                  <FileCheck2 size={20} className="text-highlight shrink-0" />
-                  <span>Cert IV in Building & Construction</span>
+                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-4 sm:px-5 py-3 border border-neutral-200/80 shadow-sm">
+                  <FileCheck2 size={18} className="text-highlight shrink-0" />
+                  <span>Cert IV & Diploma in Building</span>
                 </div>
-                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-5 py-3.5 border border-neutral-200/80">
-                  <UserCheck size={20} className="text-highlight shrink-0" />
-                  <span>Diploma in Building & Construction</span>
+                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-4 sm:px-5 py-3 border border-neutral-200/80 shadow-sm">
+                  <ShieldCheck size={18} className="text-highlight shrink-0" />
+                  <span>Cert II in Security</span>
+                </div>
+                <div className="flex items-center gap-2.5 rounded-2xl bg-white px-4 sm:px-5 py-3 border border-neutral-200/80 shadow-sm">
+                  <Laptop size={18} className="text-highlight shrink-0" />
+                  <span>Cert II & III in IT</span>
                 </div>
               </div>
             </div>

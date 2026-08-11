@@ -73,7 +73,7 @@ export function ConstructionDnaSection() {
 
               <div>
                 <span className="font-display text-4xl sm:text-5xl font-extrabold text-highlight tracking-tight">
-                  15+
+                  20+
                 </span>
                 <p className="mt-2 font-sans text-xs font-bold uppercase tracking-widest text-neutral-600">
                   Years of experience

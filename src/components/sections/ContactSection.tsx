@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, ArrowUpRight, Check, Award, FileCheck2 } from "lucide-react";
+import { Phone, Mail, MapPin, ArrowUpRight, Check, Award, FileCheck2, ShieldCheck, Laptop } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export function ContactSection() {
@@ -69,19 +69,27 @@ export function ContactSection() {
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FFF0E6] text-highlight shrink-0">
                       <MapPin size={18} />
                     </div>
-                    <span>90 Eddy Street, Merrylands West, Sydney NSW</span>
+                    <span>Parramatta NSW 2151</span>
                   </div>
                 </div>
 
-                {/* Builder Qualifications Reminder */}
-                <div className="mt-10 pt-8 border-t border-neutral-300/80 flex flex-col gap-2 font-sans text-xs font-semibold text-neutral-600">
+                {/* Qualifications & Certifications Reminder */}
+                <div className="mt-10 pt-8 border-t border-neutral-300/80 flex flex-col gap-2.5 font-sans text-xs font-semibold text-neutral-600">
                   <div className="flex items-center gap-2">
-                    <Award size={16} className="text-highlight" />
+                    <Award size={16} className="text-highlight shrink-0" />
                     <span>NSW Licensed Builder & Trades Background</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <FileCheck2 size={16} className="text-highlight" />
+                    <FileCheck2 size={16} className="text-highlight shrink-0" />
                     <span>Cert IV & Diploma in Building & Construction</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck size={16} className="text-highlight shrink-0" />
+                    <span>Cert II in Security (10+ Yrs Security Exp)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Laptop size={16} className="text-highlight shrink-0" />
+                    <span>Cert II & Cert III in Information Technology</span>
                   </div>
                 </div>
               </motion.div>

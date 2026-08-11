@@ -72,11 +72,11 @@ export function FounderNoteSection() {
               className="flex flex-col space-y-6 mt-8 lg:mt-0"
             >
               <p className="font-sans text-xl sm:text-2xl font-medium leading-relaxed tracking-tight text-neutral-900">
-                &ldquo;I’m Eddy, owner and director of Judeva Building & Facilities Management. With a Builder’s Licence, Cert IV and Diploma in Building & Construction, and years of hands-on experience across building management and construction, I bring a genuinely different perspective to how buildings are managed.&rdquo;
+                &ldquo;I’m Eddy, owner and director of Judeva Building & Facilities Management. With a Builder’s Licence, Cert IV and Diploma in Building & Construction, 10+ years of security experience which greatly complements my building management expertise, and 20+ years of hands-on industry experience, I bring a genuinely different perspective to how buildings are managed.&rdquo;
               </p>
 
               <p className="font-sans text-base sm:text-lg leading-relaxed text-neutral-700 font-normal">
-                &ldquo;Most building managers come from an administrative background — I come from the trades and construction side, which means I understand not just how to manage a building, but how it was actually built, what to look for, and how to solve problems before they become costly. I treat every site I manage as if it were my own.&rdquo;
+                &ldquo;Most building managers come from a purely administrative background — I come from trades, construction, and security. This means I understand not just how to manage a building, but how it was actually built, how to safeguard property and residents, what to look for, and how to solve problems before they become costly. I treat every site I manage as if it were my own.&rdquo;
               </p>
 
               <p className="font-sans text-base sm:text-lg leading-relaxed text-neutral-700 font-normal">

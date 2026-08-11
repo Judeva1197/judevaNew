@@ -13,9 +13,14 @@ const serviceAreas = [
     suburbs: ["Sydney CBD", "Barangaroo", "Surry Hills", "Pyrmont", "Ultimo", "Darlinghurst"],
   },
   {
-    region: "Inner West",
+    region: "Inner West & Central West",
     description: "Boutique residential complexes, converted heritage sites, and community strata management.",
     suburbs: ["Merrylands", "Parramatta", "Strathfield", "Burwood", "Newtown", "Leichhardt"],
+  },
+  {
+    region: "Greater West",
+    description: "Rapidly growing residential developments, commercial hubs, and multi-unit strata schemes across Western Sydney.",
+    suburbs: ["Austral", "Penrith", "Liverpool", "Campbelltown", "Norwest", "Castle Hill"],
   },
   {
     region: "North Shore & Northern Beaches",

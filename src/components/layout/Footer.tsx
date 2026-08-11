@@ -40,7 +40,7 @@ export function Footer() {
               <div className="mt-2 w-full h-[150px] rounded-2xl overflow-hidden border border-white/20 relative">
                 <iframe
                   title="Judeva Location Map"
-                  src="https://maps.google.com/maps?q=90%20Eddy%20Street,%20Merrylands%20West%20NSW%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Parramatta%20NSW%202151%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   className="w-full h-full border-0 filter grayscale contrast-125 opacity-90 hover:opacity-100 transition-opacity"
                   loading="lazy"
                   allowFullScreen
@@ -114,7 +114,7 @@ export function Footer() {
                 <li>
                   <div className="flex items-start gap-2.5 text-neutral-300">
                     <MapPin size={16} className="text-highlight shrink-0 mt-0.5" />
-                    <span>90 Eddy Street, Merrylands West, Sydney NSW</span>
+                    <span>Parramatta NSW 2151</span>
                   </div>
                 </li>
               </ul>
