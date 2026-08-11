@@ -186,11 +186,11 @@ export function HeroSection() {
                     </span>
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-black/40 px-3.5 py-1.5 backdrop-blur-md border border-white/15">
                       <ShieldCheck className="h-3.5 w-3.5 text-highlight" />
-                      <span>Cert II in Security</span>
+                      <span>Certified in Security (10+ Yrs Security Exp)</span>
                     </span>
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-black/40 px-3.5 py-1.5 backdrop-blur-md border border-white/15">
                       <Laptop className="h-3.5 w-3.5 text-highlight" />
-                      <span>Cert II & III in Information Technology</span>
+                      <span>Certified in Information Technology (IT)</span>
                     </span>
                   </div>
 

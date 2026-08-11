@@ -48,11 +48,11 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center gap-2.5 rounded-2xl bg-white px-4 sm:px-5 py-3 border border-neutral-200/80 shadow-sm">
                   <ShieldCheck size={18} className="text-highlight shrink-0" />
-                  <span>Cert II in Security</span>
+                  <span>Certified in Security (10+ Yrs Security Exp)</span>
                 </div>
                 <div className="flex items-center gap-2.5 rounded-2xl bg-white px-4 sm:px-5 py-3 border border-neutral-200/80 shadow-sm">
                   <Laptop size={18} className="text-highlight shrink-0" />
-                  <span>Cert II & III in IT</span>
+                  <span>Certified in Information Technology (IT)</span>
                 </div>
               </div>
             </div>

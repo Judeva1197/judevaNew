@@ -106,9 +106,9 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:eddy@judeva.com.au" className="flex items-center gap-2.5 hover:text-highlight transition-colors">
+                  <a href="mailto:info@judeva.com.au" className="flex items-center gap-2.5 hover:text-highlight transition-colors">
                     <Mail size={16} className="text-highlight shrink-0" />
-                    <span>eddy@judeva.com.au</span>
+                    <span>info@judeva.com.au</span>
                   </a>
                 </li>
                 <li>

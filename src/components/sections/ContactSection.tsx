@@ -56,13 +56,13 @@ export function ContactSection() {
                   </a>
 
                   <a
-                    href="mailto:eddy@judeva.com.au"
+                    href="mailto:info@judeva.com.au"
                     className="flex items-center gap-3 transition-colors hover:text-highlight"
                   >
                     <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FFF0E6] text-highlight">
                       <Mail size={18} />
                     </div>
-                    <span>eddy@judeva.com.au</span>
+                    <span>info@judeva.com.au</span>
                   </a>
 
                   <div className="flex items-center gap-3 text-neutral-700 font-medium">
@@ -85,11 +85,11 @@ export function ContactSection() {
                   </div>
                   <div className="flex items-center gap-2">
                     <ShieldCheck size={16} className="text-highlight shrink-0" />
-                    <span>Cert II in Security (10+ Yrs Security Exp)</span>
+                    <span>Certified in Security (10+ Yrs Security Exp)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Laptop size={16} className="text-highlight shrink-0" />
-                    <span>Cert II & Cert III in Information Technology</span>
+                    <span>Certified in Information Technology (IT)</span>
                   </div>
                 </div>
               </motion.div>
